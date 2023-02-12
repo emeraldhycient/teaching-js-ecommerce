@@ -13,7 +13,7 @@
     <header class="px-10 py-6 w-screen shadow">
         <nav class="w-full flex justify-between items-center">
             <img src="./assets/logo/logo.svg" alt="">
-            <div class="flex items-center">
+            <div class="hidden md:flex items-center">
                 <div class="input-holder border border-gray-200 h-10 rounded w-80 flex justify-between items-center">
                     <input type="search" placeholder="search ..." class="outline-none w-[90%] px-2" id="" />
                     <i class="fa-solid fa-magnifying-glass w-[10%] text-gray-400"></i>
@@ -36,131 +36,8 @@
         </nav>
     </header>
     <main class="px-10 py-6 ">
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
-            <div class="h-fit pb-4 shadow">
-                <div class="h-fit bg-white">
-                    <img src="./assets/products/food.webp" class="h-36 w-full rounded-t" alt="">
-                </div>
-                <div class="mt-3 px-3">
-                    <h5 class="text-[16px] font-light">longest product name ever </h5>
-                    <h6 class="text-[22px] font-semibold">₦7,000</h6>
-                    <div class="flex justify-between items-center my-3">
-                        <h3>QTY</h3>
-                        <div class="flex">
-                            <div class="bg-amber-50 px-5 py-2 rounded" onclick="decreaseQty()" id="minusbtn">
-                                <i class="fa-solid fa-minus"></i>
-                            </div>
-                            <div class="w-12 text-center" id="qty_holder">1</div>
-                            <div class="bg-amber-50 px-5 py-2 rounded" onclick="increaseQty()" id="plusbtn">
-                                <i class="fa-solid fa-plus"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-2 flex justify-between items-center">
-                        <div class="flex">
-                            <i class="fa-solid fa-star text-amber-500"></i>
-                            <i class="fa-solid fa-star text-amber-500"></i>
-                            <i class="fa-solid fa-star text-amber-500"></i>
-                            <i class="fa-solid fa-star text-amber-500"></i>
-                            <i class="fa-solid fa-star text-gray-200"></i>
-                        </div>
-                        <button class="bg-amber-500 text-white rounded-sm px-2 py-2 text-sm">Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="h-fit pb-4 shadow">
-                <div class="h-fit bg-white">
-                    <img src="./assets/products/food.webp" class="h-36 w-full rounded-t" alt="">
-                </div>
-                <div class="mt-3 px-3">
-                    <h5 class="text-[16px] font-light">longest product name ever </h5>
-                    <h6 class="text-[22px] font-semibold">₦7,000</h6>
-                    <div class="flex justify-between items-center my-3">
-                        <h3>QTY</h3>
-                        <div class="flex">
-                            <div class="bg-amber-50 px-5 py-2 rounded" onclick="decreaseQty()" id="minusbtn">
-                                <i class="fa-solid fa-minus"></i>
-                            </div>
-                            <div class="w-12 text-center" id="qty_holder">1</div>
-                            <div class="bg-amber-50 px-5 py-2 rounded" onclick="increaseQty()" id="plusbtn">
-                                <i class="fa-solid fa-plus"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-2 flex justify-between items-center">
-                        <div class="flex">
-                            <i class="fa-solid fa-star text-amber-500"></i>
-                            <i class="fa-solid fa-star text-amber-500"></i>
-                            <i class="fa-solid fa-star text-amber-500"></i>
-                            <i class="fa-solid fa-star text-amber-500"></i>
-                            <i class="fa-solid fa-star text-gray-200"></i>
-                        </div>
-                        <button class="bg-amber-500 text-white rounded-sm px-2 py-2 text-sm">Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="h-fit pb-4 shadow">
-                <div class="h-fit bg-white">
-                    <img src="./assets/products/food.webp" class="h-36 w-full rounded-t" alt="">
-                </div>
-                <div class="mt-3 px-3">
-                    <h5 class="text-[16px] font-light">longest product name ever </h5>
-                    <h6 class="text-[22px] font-semibold">₦7,000</h6>
-                    <div class="flex justify-between items-center my-3">
-                        <h3>QTY</h3>
-                        <div class="flex">
-                            <div class="bg-amber-50 px-5 py-2 rounded" onclick="decreaseQty()" id="minusbtn">
-                                <i class="fa-solid fa-minus"></i>
-                            </div>
-                            <div class="w-12 text-center" id="qty_holder">1</div>
-                            <div class="bg-amber-50 px-5 py-2 rounded" onclick="increaseQty()" id="plusbtn">
-                                <i class="fa-solid fa-plus"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-2 flex justify-between items-center">
-                        <div class="flex">
-                            <i class="fa-solid fa-star text-amber-500"></i>
-                            <i class="fa-solid fa-star text-amber-500"></i>
-                            <i class="fa-solid fa-star text-amber-500"></i>
-                            <i class="fa-solid fa-star text-amber-500"></i>
-                            <i class="fa-solid fa-star text-gray-200"></i>
-                        </div>
-                        <button class="bg-amber-500 text-white rounded-sm px-2 py-2 text-sm">Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="h-fit pb-4 shadow">
-                <div class="h-fit bg-white">
-                    <img src="./assets/products/food.webp" class="h-36 w-full rounded-t" alt="">
-                </div>
-                <div class="mt-3 px-3">
-                    <h5 class="text-[16px] font-light">longest product name ever </h5>
-                    <h6 class="text-[22px] font-semibold">₦7,000</h6>
-                    <div class="flex justify-between items-center my-3">
-                        <h3>QTY</h3>
-                        <div class="flex">
-                            <div class="bg-amber-50 px-5 py-2 rounded" onclick="decreaseQty()" id="minusbtn">
-                                <i class="fa-solid fa-minus"></i>
-                            </div>
-                            <div class="w-12 text-center" id="qty_holder">1</div>
-                            <div class="bg-amber-50 px-5 py-2 rounded" onclick="increaseQty()" id="plusbtn">
-                                <i class="fa-solid fa-plus"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-2 flex justify-between items-center">
-                        <div class="flex">
-                            <i class="fa-solid fa-star text-amber-500"></i>
-                            <i class="fa-solid fa-star text-amber-500"></i>
-                            <i class="fa-solid fa-star text-amber-500"></i>
-                            <i class="fa-solid fa-star text-amber-500"></i>
-                            <i class="fa-solid fa-star text-gray-200"></i>
-                        </div>
-                        <button class="bg-amber-500 text-white rounded-sm px-2 py-2 text-sm">Add to Cart</button>
-                    </div>
-                </div>
-            </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5" id="productcontainer">
+
 
         </div>
     </main>
