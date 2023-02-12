@@ -10,15 +10,17 @@
 </head>
 
 <body>
-    <header class="px-10 py-6 w-screen shadow">
+    <header class="md:px-10 pr-5 pt-6 md:py-6 w-screen shadow">
         <nav class="w-full flex justify-between items-center">
-            <img src="./assets/logo/logo.svg" alt="">
-            <div class="hidden md:flex items-center">
-                <div class="input-holder border border-gray-200 h-10 rounded w-80 flex justify-between items-center">
+            <img src="./assets/logo/logo.svg" class="mb-3 ml-4" alt="">
+            <div class="flex items-center">
+                <i class="fa-solid fa-bars  md:hidden" id="menuToggler"></i>
+                <div
+                    class="input-holder border border-gray-200 h-10 rounded w-80 hidden md:flex justify-between items-center">
                     <input type="search" placeholder="search ..." class="outline-none w-[90%] px-2" id="" />
                     <i class="fa-solid fa-magnifying-glass w-[10%] text-gray-400"></i>
                 </div>
-                <div class="flex items-center ml-8">
+                <div class="hidden md:flex items-center ml-8">
                     <a class="flex items-center mr-3">
                         <i class="fa-sharp fa-solid fa-box mr-1 text-[#FEB0A9]"></i>
                         <h5>orders</h5>
@@ -34,6 +36,29 @@
                 </div>
             </div>
         </nav>
+        <div class="hidden  relative w-[70%] h-[30vh]  top-0 left-0 z-5" id="menu">
+            <div class="flex flex-col items-left absolute  pt-6">
+                <div
+                    class="input-holder border border-gray-200 h-10 rounded w[85%] flex md:hidden justify-between items-center  ml-4 bg-white">
+                    <input type="search" placeholder="search ..." class="outline-none w-[90%] px-2" id="" />
+                    <i class="fa-solid fa-magnifying-glass w-[10%] text-gray-400"></i>
+                </div>
+                <div class="flex flex-col md:hidden items-left ml-4 mt-4">
+                    <a class="flex items-center mb-3">
+                        <i class="fa-sharp fa-solid fa-box mr-1 text-[#FEB0A9]"></i>
+                        <h5>orders</h5>
+                    </a>
+                    <a class="flex items-center mb-3 ">
+                        <i class="fa-solid fa-heart-circle-plus mr-1 text-[#FEB0A9]"></i>
+                        <h5>wishlist</h5>
+                    </a>
+                    <a class="flex items-center mb-3">
+                        <i class="fa-solid fa-cart-shopping  mr-1 text-[#FEB0A9]"></i>
+                        <h5>carts</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
     <main class="px-10 py-6 ">
         <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5" id="productcontainer">

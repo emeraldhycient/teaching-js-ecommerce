@@ -64,6 +64,20 @@ function printProducts(data) {
 
 
 
+const menuToggler = document.querySelector("#menuToggler")
+const menu = document.querySelector("#menu")
+
+menuToggler.addEventListener("click", () => {
+    if (menu.style.display !== "none") {
+        menu.style.display = "none"
+    } else {
+        menu.style.display = "block"
+    }
+})
+
+
+
+
 
 
 
