@@ -27,13 +27,13 @@ fetch('https://dummyjson.com/products')
 
 
 
-
 function printProducts(data) {
     data.map(product => {
-        console.log(product.title)
         productcontainer.innerHTML += `<div class="h-fit pb-4 shadow">
                     <div class="h-fit bg-white">
+                    <a href="./details.html?productid=${product.id}">                    
                         <img src="${product.thumbnail}" class="h-36 w-full rounded-t" alt="">
+                    </a>
                     </div>
                     <div class="mt-3 px-3">
                         <h5 class="text-[16px] font-light">${product.title} </h5>
@@ -74,6 +74,7 @@ menuToggler.addEventListener("click", () => {
         menu.style.display = "block"
     }
 })
+
 
 
 
