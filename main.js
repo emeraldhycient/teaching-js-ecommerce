@@ -37,7 +37,7 @@ function printProducts(data) {
                     </div>
                     <div class="mt-3 px-3">
                         <h5 class="text-[16px] font-light">${product.title} </h5>
-                        <h6 class="text-[22px] font-semibold">₦${product.price}</h6>
+                        <h6 class="text-[22px] font-semibold">$${product.price}</h6>
                         <div class="flex justify-between items-center my-3">
                             <h3>QTY</h3>
                             <div class="flex">
@@ -54,7 +54,7 @@ function printProducts(data) {
                             <div class="flex">
                                ${product.rating}
                             </div>
-                            <button class="bg-amber-500 text-white rounded-sm px-2 py-2 text-sm">Add to Cart</button>
+                            <button onclick='addToCart(${JSON.stringify(product)})' class="bg-amber-500 text-white rounded-sm px-2 py-2 text-sm">Add to Cart</button>
                         </div>
                     </div>
                 </div>`
@@ -76,6 +76,29 @@ menuToggler.addEventListener("click", () => {
 })
 
 
+
+let cartcount = document.querySelectorAll(".cartcount");
+    
+const cartcountArr = [...cartcount]
+
+cartcountArr.map((item1,index) => {
+    item1.innerHTML += `
+      <h6 class="text-sm font-bold text-white">${index}</h6>
+      `
+})
+
+
+
+function addToCart (product) {
+    let currentCart =localStorage.getItem("cart");
+    if (currentCart !== null && currentCart !== undefined && currentCart !== "") {
+        let newCart = [...JSON.parse(currentCart), product]
+        localStorage.setItem("cart",JSON.stringify(newCart))
+    }
+    let newCart = [product]
+    localStorage.setItem("cart", JSON.stringify(newCart))
+
+}
 
 
 
